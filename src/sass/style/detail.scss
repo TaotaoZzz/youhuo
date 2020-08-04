@@ -1,0 +1,114 @@
+@charset "utf-8";
+
+$huhPercent:100%;
+// 背景色
+$bgcolor:(bgw:white,bgf:#f4f4f4,bgf8:#F8F8F8,bge:#e5e5e5,bg4:#444,bg3:#3a3a3a,bgb:black,bga:#a496a4,bge0:#e0dbe0);
+//定位
+@mixin posit($top:top,$t:0,$left:left,$l:0) {
+    position: absolute;
+    #{$top}:$t;
+    #{$left}: $l;
+}
+@import "comm";
+@import "header";
+@import "navlist";
+
+/* 细节 */
+.product{
+    height: 700px;
+}
+
+.left{
+    width: 565px;
+    height: 600px;
+    position: relative;
+    float: left;
+    .spic{
+        width: 420px;
+        height: 560px;
+        float: left;
+        img{
+            width: 100%;
+        }
+        .sglass{
+            width: 314px;
+            height: 314px;
+            position: absolute;
+            top: 0;
+            background: lightsalmon;
+            opacity: 0.5;
+        }
+    }
+    .bglass{
+        width: 558px;
+        height: 558px;
+        position: absolute;
+        left: 515px;
+        top: 0;
+        overflow: hidden;
+        border: 1px solid #8e8e8e;
+        display: none;
+        .bpic{
+            width: 750px;
+            height: 1000px;
+            position: absolute;
+            img{
+                width: 100%;
+            }
+        }
+    }
+    ul{
+        width: 75px;
+        margin-left: 10px;
+        float: left;
+        li{
+            width: 75px;
+            height: 100px;
+            list-style: none;
+            margin-bottom: 15px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+.right{
+    float: left;
+    width: 585px;
+    h4{
+        height: 85px;
+        line-height: 85px;
+        font-size: 20px;
+        border-bottom: 1px solid #f4f4f4;
+    }
+    .color,.price{
+        padding: 20px 0;
+        border-bottom: 1px solid #f4f4f4;
+    }
+    p{
+        height: 40px;
+        font-size: 13px;
+        line-height: 30px;
+    }
+    button{
+        height: 45px;
+        font-size: 16px;
+        line-height: 45px;
+        margin-top: 20px;
+        &:first-child{
+            width: 180px;
+            background-color: #d0021b;
+            color: white;
+            margin-right: 10px;
+            border: 0;
+        }
+        &:last-child{
+            width: 138px;
+            border: 1px solid #f4f4f4;
+        }
+    }
+}
+
+
+@import "footer";
+@import "gotop";

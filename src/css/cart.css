@@ -1,0 +1,204 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 990px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 顶端 */
+.top-head{
+    height: 66px;
+    width: 100%;
+    font-size: 11px;
+    border-bottom: 2px solid black;
+}
+.top-head .top{
+    height: 66px;
+    width: 990px;
+    margin: auto;
+}
+.top-head img{
+    margin-top: 13px;
+}
+
+.top-head ul{
+    height: 66px;
+    float: right;
+}
+.top-head ul li{
+    height: 66px;
+    line-height: 66px;
+    padding-left: 10px;
+    padding-right: 12px;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.top-head ul li .iconfont{
+    font-size: 11px;
+}
+.top-head ul li::after{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 27px;
+    right: 0;
+}
+
+
+/* 购物车 */
+.box{
+    height: 515px;
+}
+.box h3{
+    height: 40px;
+    margin: 40px 0 50px 0;
+    line-height: 40px;
+    font-size: 28px;
+}
+.box .allselect{
+    height: 50px;
+    padding: 0 30px;
+    background: #444444;
+    color: white;
+    margin-bottom: 20px;
+}
+.box .allselect span{
+    line-height: 50px;
+    margin: 0 60px;
+}
+.box .allselect span:nth-child(3){
+    margin: 0 150px 0 120px;
+}.box .allselect span:nth-child(2){
+    margin: 0 20px;
+}
+
+.box .select{
+    height: 90px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+.box .select>input{
+    float: left;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+.box .select .mess{
+    height: 90px;
+    width: 368px;
+    float: left;
+}
+.box .select .mess img{
+    width: 68px;
+    margin-right: 20px;
+    float: left;
+}
+.box .select .mess p {
+    width: 280px;
+    float: left;
+    font-size: 15px;
+    line-height: 43px;
+    letter-spacing: 2px;
+}
+.box .select>p{
+    float: left;
+    margin: 0 50px 0 50px;
+    height: 32px;
+    margin-top: 20px;
+    line-height: 32px;
+
+}
+.box .select>p a, .box .select>p input{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #444;
+    text-align: center;
+    float: left;
+}
+.box .select .del{
+    border: 0;
+    width: 90px;
+
+}
+.box .account{
+    height: 40px;
+    background: #e0e0e0;
+}
+.box .account button{
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #d0021b;
+    color: white;
+    border: 0;
+    float: right;
+}
+.box .account span{
+    line-height: 40px;
+    font-size: 18px;
+}
+
+
+
+
+/* 底部 */
+footer{
+    height: 384px;
+    background: black;
+}
+footer .f-top{
+    height: 61px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 15px;
+}
+footer .f-top p {
+    float: left;
+    margin-right: 58px;
+    line-height: 61px;
+}
+footer .f-top span {
+    font-size: 9px;
+    color: white;
+}
+footer .f-top .iconfont{
+    font-size: 24px;
+}
+footer .f-top span:nth-child(2){
+    color: #ee0011;
+    font-weight: 700;
+    margin: 0 10px;
+}
+footer .f-mid{
+    height: 118px;
+}
+footer .f-mid dl{
+    width: 178px;
+    height: 118px;
+    font-size: 12px;
+    float: left;
+    line-height: 24px;
+
+}
+footer .f-mid dt{
+    color: white;
+}
+footer .f-mid dd{
+    color: #666666;
+    line-height: 24px;
+}
+footer .f-mid dl:last-child{
+    width: 72px;
+}

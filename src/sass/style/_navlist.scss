@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+.nav-box{
+    width: $huhPercent;
+    height: 40px;
+    background: map-get($bgcolor,bg3);
+    margin-bottom: 10px;
+    position: relative;
+}
+.nav-box nav{
+    height: 40px;
+}
+.nav-box nav li {
+    list-style: none;
+    float: left;
+    margin-right: 86px;
+}
+.nav-box nav li>a {
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+}
+.nav-box nav li:hover a{
+    border-bottom: 2px solid white;
+}
+
+
+/* 副列表导航 */
+.sub-nav{
+    width: $huhPercent;
+    height: 405px;
+    background: map-get($bgcolor,bgf8);
+    @include posit(top,40px);
+    z-index: 999;
+    padding: 30px 0;
+    display: none;
+}
+.sub-nav .left{
+    width: 170px;
+    padding-right: 50px;
+    font-size: 14px;
+    border-right: 1px solid #8e8e8e;
+    float: left;
+}
+.sub-nav dt{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.sub-nav dd{
+    margin-bottom: 20px;
+}
+.sub-nav dd a {
+    color: #8e8e8e;
+}
+.sub-nav dd:hover a{
+    border-bottom: 1px solid #8e8e8e;
+}
+
+.sub-nav .center, .sub-nav .right{
+    width: 170px;
+    padding: 0 50px;
+    font-size: 14px;
+    border-right: 1px solid #8e8e8e;
+    float: left;
+}
+.sub-nav .right{
+    border-right:none
+}
+
+.sub-nav .nav-pic{
+    width: 337px;
+    float: right;
+}
+.sub-nav .nav-pic img{
+    width: $huhPercent;
+}
+.sub-nav .nav-pic p {
+    width:337px;
+    text-align: center;
+    margin-top: 40px;
+}
+.sub-nav .nav-pic p a {
+    color:#8e8e8e;
+}

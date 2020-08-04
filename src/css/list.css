@@ -1,0 +1,368 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1150px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 顶端 */
+.top-head{
+    height: 37px;
+    width: 100%;
+    background: #f4f4f4;
+    font-size: 11px;
+}
+
+.top-head .youho{
+    float: left;
+    padding-top: 9px;
+}
+
+.top-head .danger{
+    color: red;
+    margin-left: 26px;
+    float: left;
+    padding-top: 9px;
+}
+
+.top-head ul{
+    height: 32px;
+    float: right;
+}
+.top-head ul li{
+    height: 32px;
+    line-height: 32px;
+    padding-left: 10px;
+    padding-right: 12px;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.top-head ul li .iconfont{
+    font-size: 11px;
+}
+.top-head ul li::after{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 11px;
+    right: 0;
+}
+
+.top-head ul li:last-child{
+    color: red;
+}
+.top-head ul li:nth-last-child(2){
+    color: green;
+}
+
+
+/* 搜索购物车栏 */
+header{
+    height: 89px;
+    text-align: center;
+}
+header img{
+    margin-top: 29px;
+}
+header .search{
+    float: right;
+    margin-top: 40px;
+}
+header .search input{
+    width: 240px;
+    height: 26px;
+    border: 1px solid #444444;
+    outline: none;
+    float: left;
+}
+header .search p {
+    width: 79px;
+    height: 28px;
+    background: #444;
+    text-align: center;
+    line-height: 28px;
+    float: left;
+}
+header .search .icon-searchprop{
+    color: white;
+}
+header .search .icon-gouwuche{
+    margin-left: 27px;
+    font-size: 27px;
+}
+
+
+/* 导航栏 */
+.nav-box{
+    width: 100%;
+    height: 40px;
+    background: #3a3a3a;
+    margin-bottom: 10px;
+    position: relative;
+}
+.nav-box nav{
+    height: 40px;
+}
+.nav-box nav li {
+    list-style: none;
+    float: left;
+    margin-right: 86px;
+}
+.nav-box nav li>a {
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+}
+.nav-box nav li:hover a{
+    border-bottom: 2px solid white;
+}
+
+
+/* 副列表导航 */
+.sub-nav{
+    width: 100%;
+    height: 405px;
+    background: #F8F8F8;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 999;
+    padding: 30px 0;
+    display: none;
+}
+.sub-nav .left{
+    width: 170px;
+    padding-right: 50px;
+    font-size: 14px;
+    border-right: 1px solid #8e8e8e;
+    float: left;
+}
+.sub-nav dt{
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+    margin-bottom: 20px;
+}
+.sub-nav dd{
+    margin-bottom: 20px;
+}
+.sub-nav dd a {
+    color: #8e8e8e;
+}
+.sub-nav dd:hover a{
+    border-bottom: 1px solid #8e8e8e;
+}
+
+.sub-nav .center, .sub-nav .right{
+    width: 170px;
+    padding: 0 50px;
+    font-size: 14px;
+    border-right: 1px solid #8e8e8e;
+    float: left;
+}
+.sub-nav .right{
+    border-right:none
+}
+
+.sub-nav .nav-pic{
+    width: 337px;
+    float: right;
+}
+.sub-nav .nav-pic img{
+    width: 100%;
+}
+.sub-nav .nav-pic p {
+    width:337px;
+    text-align: center;
+    margin-top: 40px;
+}
+.sub-nav .nav-pic p a {
+    color:#8e8e8e;
+}
+
+
+
+/* 列表导航 */
+.list-nav{
+    height: 5555px;
+}
+.list-nav h2{
+    width: 100%;
+    height: 18px;
+    padding: 15px 0;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+}
+.list-nav dl{
+    width: 160px;
+    height: 378px;
+    font-size: 14px;
+    font-weight: 700;
+    float: left;
+}
+.list-nav dl dt .icon-right{
+    font-size: 9px;
+}
+
+.list-nav dl dt{
+    height: 28px;
+    line-height: 28px;
+    font-weight: 700px;
+
+}
+.list-nav dl dd{
+    margin-left: 10px;
+    font-weight: normal;
+    height: 24px;
+    line-height: 24px;
+    display: none;
+}
+
+.list-nav .filter-box{
+    float: left;
+    width: 970px;
+    height: 5448px;
+}
+.list-nav .filter-box .filter p{
+    height: 30px;
+    padding: 10px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    border: #f4f4f4 solid;
+    border-width: 1px 1px 0 1px;
+    line-height: 30px;
+}
+.list-nav .filter-box .filter p:nth-last-child(2){
+    border-bottom: 1px solid #f4f4f4 ;
+}
+.list-nav  .filter .selected{
+    background: #f4f4f4;
+}
+.list-nav  .filter .select {
+    margin: 10px 0 35px 0;
+    background: #f4f4f4;
+}
+.list-nav  .filter .select a{
+    padding: 0 10px;
+}
+
+
+.list-nav .filter-box .list{
+    height: 4520px;
+    border-bottom: 1px solid #f4f4f4;
+}
+.list-nav .filter-box .list li{
+    list-style: none;
+    width: 235px;
+    height: 417px;
+    margin: 0 10px 35px 0;
+    float: left;
+}
+.list-nav .filter-box .list li:nth-child(4n){
+    margin-right: 0;
+}
+.list-nav .filter-box .list img{
+    width: 235px;
+    margin-bottom: 18px;
+}
+.list-nav .filter-box .list p{
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+}
+.list-nav .filter-box .list p:last-child{
+    margin-top: 5px;
+}
+
+.list-nav .filter-box .list-num{
+    height: 24px;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.list-nav .filter-box .list-num .num{
+    float: right;
+    height: 24px;
+}
+.list-nav .filter-box .list-num a {
+    height: 24px;
+    padding: 0 9px;
+    line-height: 24px;
+    font-size: 12px;
+}
+
+.list-nav .filter-box h3{
+    height: 39px;
+    border-bottom: 1px solid #f4f4f4;
+    margin-top: 10px;
+}
+.list-nav .filter-box .scan{
+    height: 241px;
+    margin: 30px 0;
+}
+.list-nav .filter-box .scan img{
+    width: 150px;
+}
+.list-nav .filter-box .scan p{
+    font-size: 12px;
+}
+
+
+/* 底部 */
+footer{
+    height: 384px;
+    background: black;
+}
+footer .f-top{
+    height: 61px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 15px;
+}
+footer .f-top p {
+    float: left;
+    margin-right: 58px;
+    line-height: 61px;
+}
+footer .f-top span {
+    font-size: 9px;
+    color: white;
+}
+footer .f-top .iconfont{
+    font-size: 24px;
+}
+footer .f-top span:nth-child(2){
+    color: #ee0011;
+    font-weight: 700;
+    margin: 0 10px;
+}
+footer .f-mid{
+    height: 118px;
+}
+footer .f-mid dl{
+    width: 178px;
+    height: 118px;
+    font-size: 12px;
+    float: left;
+    line-height: 24px;
+
+}
+footer .f-mid dt{
+    color: white;
+}
+footer .f-mid dd{
+    color: #666666;
+    line-height: 24px;
+}
+footer .f-mid dl:last-child{
+    width: 72px;
+}

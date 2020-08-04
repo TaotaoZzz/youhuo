@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "352766",
+      "name": "信封",
+      "font_class": "xinfeng",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "5758829",
+      "name": "二维码",
+      "font_class": "erweima-copy",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "5985543",
+      "name": "放大镜",
+      "font_class": "searchprop",
+      "unicode": "e525",
+      "unicode_decimal": 58661
+    },
+    {
+      "icon_id": "7872529",
+      "name": "心 爱心",
+      "font_class": "xinaixin",
+      "unicode": "e644",
+      "unicode_decimal": 58948
+    },
+    {
+      "icon_id": "7929384",
+      "name": "正品",
+      "font_class": "zhengpin",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "8458793",
+      "name": "手机 ",
+      "font_class": "shouji",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "8854768",
+      "name": "小于",
+      "font_class": "xiaoyu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "8994750",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    },
+    {
+      "icon_id": "9793123",
+      "name": "微信",
+      "font_class": "weixin",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "10334067",
+      "name": "大于",
+      "font_class": "right",
+      "unicode": "e506",
+      "unicode_decimal": 58630
+    },
+    {
+      "icon_id": "10681231",
+      "name": "警告",
+      "font_class": "jinggao",
+      "unicode": "e68e",
+      "unicode_decimal": 59022
+    },
+    {
+      "icon_id": "14213633",
+      "name": "菜单",
+      "font_class": "menu",
+      "unicode": "e50b",
+      "unicode_decimal": 58635
+    }
+  ]
+}

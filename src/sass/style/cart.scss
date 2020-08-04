@@ -1,0 +1,112 @@
+@charset "utf-8";
+$huhPercent:100%;
+// 背景色
+$bgcolor:(bgw:white,bgf:#f4f4f4,bgf8:#F8F8F8,bge:#e5e5e5,bg4:#444,bg3:#3a3a3a,bgb:black,bga:#a496a4,bge0:#e0dbe0);
+//定位
+@mixin posit($top:top,$t:0,$left:left,$l:0) {
+    position: absolute;
+    #{$top}:$t;
+    #{$left}: $l;
+}
+
+@import "comm";
+@import "subheader";
+@import "navlist";
+
+/* 购物车 */
+.box{
+    height: 515px;
+    h3{
+        height: 40px;
+        margin: 40px 0 50px 0;
+        line-height: 40px;
+        font-size: 28px;
+    }
+    .allselect{
+        height: 50px;
+        padding: 0 30px;
+        background: #444444;
+        color: white;
+        margin-bottom: 20px;
+        span{
+            line-height: 50px;
+            margin: 0 60px;
+            &:nth-child(3){
+                margin: 0 150px 0 120px;
+            }
+            &:nth-child(2){
+                margin: 0 20px;
+            }
+        }
+    }
+    .select{
+        height: 90px;
+        padding: 30px;
+        margin-bottom: 20px;
+        border: 1px solid #e0e0e0;
+        &>input{
+            float: left;
+            margin-top: 40px;
+            margin-right: 20px;
+        }
+        .mess{
+            height: 90px;
+            width: 368px;
+            float: left;
+            img{
+                width: 68px;
+                margin-right: 20px;
+                float: left;
+            }
+            p {
+                width: 280px;
+                float: left;
+                font-size: 15px;
+                line-height: 43px;
+                letter-spacing: 2px;
+            }
+        }
+        &>p{
+            float: left;
+            margin: 0 50px 0 50px;
+            height: 32px;
+            margin-top: 20px;
+            line-height: 32px;
+            a,input{
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                border: 1px solid #444;
+                text-align: center;
+                float: left;
+            }
+        }
+        .del{
+            border: 0;
+            width: 90px;
+        
+        }
+    }
+    .account{
+        height: 40px;
+        background: #e0e0e0;
+        button{
+            width: 180px;
+            height: 40px;
+            font-size: 18px;
+            background-color: #d0021b;
+            color: white;
+            border: 0;
+            float: right;
+        }
+        span{
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+}
+
+
+
+@import "footer";

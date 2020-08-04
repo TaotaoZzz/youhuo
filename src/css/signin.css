@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    width: 1150px;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* 顶端 */
+.top-head{
+    height: 66px;
+    width: 100%;
+    font-size: 11px;
+    border-bottom: 2px solid black;
+}
+.top-head .top{
+    height: 66px;
+    width: 990px;
+    margin: auto;
+}
+.top-head img{
+    margin-top: 13px;
+}
+
+.top-head ul{
+    height: 66px;
+    float: right;
+}
+.top-head ul li{
+    height: 66px;
+    line-height: 66px;
+    padding-left: 10px;
+    padding-right: 12px;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.top-head ul li .iconfont{
+    font-size: 11px;
+}
+.top-head ul li::after{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 27px;
+    right: 0;
+}
+
+
+/* 中部 */
+.mid{
+    height: 745px;
+    margin-top: 130px;
+}
+.mid .left{
+    width: 575px;
+    height: 318px;
+    padding: 50px 0;
+    text-align: center;
+    border-right: 1px solid #e5e5e5;
+    float: left;
+}
+.mid .left img{
+    margin-top: 50px;
+    
+}
+.mid .right{
+    height: 368px;
+    padding-left: 80px;
+    float: left;
+}
+.mid .right p{
+    width: 270px;
+    height: 35px;
+    margin-bottom: 25px;
+
+}
+.mid .right p input{
+    padding: 0 3px;
+    width: 260px;
+    height: 100%;
+    outline: none;
+    text-indent: 5px;
+}
+.mid .right p .submit{
+    width: 270px;
+    height: 45px;
+    background: #444;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    line-height: 45px;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 10px;
+
+}
+
+
+/* 底部 */
+footer{
+    height: 384px;
+    background: black;
+}
+footer .f-top{
+    height: 61px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 15px;
+}
+footer .f-top p {
+    float: left;
+    margin-right: 58px;
+    line-height: 61px;
+}
+footer .f-top span {
+    font-size: 9px;
+    color: white;
+}
+footer .f-top .iconfont{
+    font-size: 24px;
+}
+footer .f-top span:nth-child(2){
+    color: #ee0011;
+    font-weight: 700;
+    margin: 0 10px;
+}
+footer .f-mid{
+    height: 118px;
+}
+footer .f-mid dl{
+    width: 178px;
+    height: 118px;
+    font-size: 12px;
+    float: left;
+    line-height: 24px;
+
+}
+footer .f-mid dt{
+    color: white;
+}
+footer .f-mid dd{
+    color: #666666;
+    line-height: 24px;
+}
+footer .f-mid dl:last-child{
+    width: 72px;
+}
+
+
+.gotop{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    background: #444;
+}
+.gotop .icon-xiaoyu{
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+    line-height: 50px;
+}  

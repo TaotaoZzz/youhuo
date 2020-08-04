@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+$huhPercent:100%;
+// 背景色
+$bgcolor:(bgw:white,bgf:#f4f4f4,bgf8:#F8F8F8,bge:#e5e5e5,bg4:#444,bg3:#3a3a3a,bgb:black,bga:#a496a4,bge0:#e0dbe0);
+//定位
+@mixin posit($top:top,$t:0,$left:left,$l:0) {
+    position: absolute;
+    #{$top}:$t;
+    #{$left}: $l;
+}
+@import "comm";
+@import "subheader";
+@import "navlist";
+@import "logmod";
+
+.mid{
+    .right{
+         p{
+             &:first-child{
+                font-size: 20px;
+            }
+            button{
+                width: 146px;
+                height: 27px;
+                border-radius: 27px;
+                position: absolute;
+                border: 0;
+                background: #444;
+                cursor: pointer;
+                letter-spacing: 3px;
+                &:first-child{
+                    left: 0;
+                    z-index: 999;
+                    color: white;
+                }
+                &:last-child{
+                    right: 0;
+                    background: #ccc;
+                }
+            }
+         }
+    }
+} 
+
+@import "footer";

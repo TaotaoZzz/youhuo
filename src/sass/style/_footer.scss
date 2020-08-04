@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+footer{
+    height: 384px;
+    background: map-get($bgcolor,bgb);
+}
+footer .f-top{
+    height: 61px;
+    border-bottom: 1px solid #262626;
+    margin-bottom: 15px;
+}
+footer .f-top p {
+    float: left;
+    margin-right: 58px;
+    line-height: 61px;
+}
+footer .f-top span {
+    font-size: 9px;
+    color: white;
+}
+footer .f-top .iconfont{
+    font-size: 24px;
+}
+footer .f-top span:nth-child(2){
+    color: #ee0011;
+    font-weight: 700;
+    margin: 0 10px;
+}
+footer .f-mid{
+    height: 118px;
+}
+footer .f-mid dl{
+    width: 178px;
+    height: 118px;
+    font-size: 12px;
+    float: left;
+    line-height: 24px;
+
+}
+footer .f-mid dt{
+    color: white;
+}
+footer .f-mid dd{
+    color: #666666;
+    line-height: 24px;
+}
+footer .f-mid dl:last-child{
+    width: 72px;
+}

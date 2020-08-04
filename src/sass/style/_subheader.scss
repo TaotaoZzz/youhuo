@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* 顶端 */
+.top-head{
+    height: 66px;
+    width: 100%;
+    font-size: 11px;
+    border-bottom: 2px solid black;
+}
+.top-head .top{
+    height: 66px;
+    width: 990px;
+    margin: auto;
+}
+.top-head img{
+    margin-top: 13px;
+}
+
+.top-head ul{
+    height: 66px;
+    float: right;
+}
+.top-head ul li{
+    height: 66px;
+    line-height: 66px;
+    padding-left: 10px;
+    padding-right: 12px;
+    list-style: none;
+    float: left;
+    position: relative;
+}
+.top-head ul li .iconfont{
+    font-size: 11px;
+}
+.top-head ul li::after{
+    content: '';
+    width: 1px;
+    height: 14px;
+    background: #e5e5e5;
+    position: absolute;
+    top: 27px;
+    right: 0;
+}

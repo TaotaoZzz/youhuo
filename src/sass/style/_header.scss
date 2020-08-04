@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+$huhPercent:100%;
+// 背景色
+$bgcolor:(bgw:white,bgf:#f4f4f4,bgf8:#F8F8F8,bge:#e5e5e5,bg4:#444,bg3:#3a3a3a,bgb:black,bga:#a496a4,bge0:#e0dbe0);
+//定位
+@mixin posit($top:top,$t:0,$left:left,$l:0) {
+    position: absolute;
+    #{$top}:$t;
+    #{$left}: $l;
+}
+
+// 高度塌陷
+@mixin hightcollapse(){
+    content:'';
+    display: block;
+    overflow: hidden;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+
+
+/* 顶端 */
+.top-head{
+    height: 37px;
+    width: $huhPercent;
+    background: map-get($bgcolor,bgf);
+    font-size: 11px;
+    .youho{
+        float: left;
+        padding-top: 9px;
+    }
+    .danger{
+        color: red;
+        margin-left: 26px;
+        float: left;
+        padding-top: 9px;
+    }
+    ul{
+        height: 32px;
+        float: right;
+        li{
+            height: 32px;
+            line-height: 32px;
+            padding-left: 10px;
+            padding-right: 12px;
+            list-style: none;
+            float: left;
+            position: relative;
+            &::after{
+                content: '';
+                width: 1px;
+                height: 14px;
+                background: map-get($bgcolor,bge);
+                @include posit(top,11px,right,0 );
+            }
+            &:last-child{
+                color: red;
+            }
+            &:nth-last-child(2){
+                color: green;
+            }
+        }
+        .iconfont{
+            font-size: 11px;
+        }
+    }   
+}
+
+
+
+header{
+    height: 89px;
+    text-align: center;
+    img{
+        margin-top: 29px;
+    }
+    .search{
+        float: right;
+        margin-top: 40px;
+        input{
+            width: 240px;
+            height: 26px;
+            border: 1px solid #444444;
+            outline: none;
+            float: left;
+        }
+        p {
+            width: 79px;
+            height: 28px;
+            background: map-get($bgcolor,bg4);
+            text-align: center;
+            line-height: 28px;
+            float: left;
+        }
+        .icon-searchprop{
+            color: white;
+        }
+        .icon-gouwuche{
+            margin-left: 27px;
+            font-size: 27px;
+        }
+    }
+}

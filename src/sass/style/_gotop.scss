@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 回到顶部 */
+.gotop{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    background: map-get($bgcolor,bg4);
+}
+.gotop .icon-xiaoyu{
+    font-size: 34px;
+    color: white;
+    font-weight: 700;
+    line-height: 50px;
+} 

@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+/* 中部 */
+.mid{
+    /* height: 745px; */
+    height: 550px;
+    margin-top: 130px;
+    .left{
+        width: 575px;
+        height: 318px;
+        padding: 50px 0;
+        text-align: center;
+        border-right: 1px solid #e5e5e5;
+        float: left;
+        img{
+            margin-top: 50px;   
+        }
+    }
+    .right{
+        height: 368px;
+        padding-left: 80px;
+        float: left;
+        p{
+            width: 270px;
+            height: 35px;
+            margin-bottom: 25px;
+            position: relative;
+            &:first-child{
+                font-size: 20px;
+            }
+            button{
+                width: 146px;
+                height: 27px;
+                border-radius: 27px;
+                position: absolute;
+                border: 0;
+                background: #444;
+                cursor: pointer;
+                letter-spacing: 3px;
+                &:first-child{
+                    left: 0;
+                    z-index: 999;
+                    color: white;
+                }
+                &:last-child{
+                    right: 0;
+                    background: #ccc;
+                }
+            }
+            input{
+                padding: 0 3px;
+                width: 260px;
+                height: 100%;
+                outline: none;
+                text-indent: 5px;
+            }
+            .submit{
+                width: 270px;
+                height: 45px;
+                background: red;
+                font-size: 20px;
+                color: white;
+                text-align: center;
+                line-height: 45px;
+                font-weight: 700;
+                border: none;
+                letter-spacing: 10px;
+            }
+        }
+    }
+}
